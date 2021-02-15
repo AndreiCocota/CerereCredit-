@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b256132729.js" crossorigin="anonymous"></script>
+    <title>Cerere Credit</title>
+</head>
+<body>
+    <!-- HEADER  -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="logo">
+                <div class="white-elipse1"></div>
+                <div class="white-elipse2"></div>
+                <div class="white-elipse3"></div>
+                <div class="point">.</div>
+            </div>
+            <div class="logo-title">
+                <a class="navbar-brand" href="#">heyhome.</a>
+            </div>
+            <div class="button-toggle">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu navbar-toggler-icon">
+                        <img src="./images/menu.png" alt="Menu">
+                    </span>
+                  </button>
+            </div>
+            <div class="nav-container collapse navbar-collapse" id="navbarText">
+                <div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Cumpără</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Vinde</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proprietăți</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Despre noi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                      </ul>
+                </div>
+                <div>
+                    <ul class="navbar-nav login-items">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOG IN</a>
+                        </li>
+                            <span class="vertical-line"></span>
+                        <li class="nav-item item-underline">
+                            <a class="nav-link" href="#">SĂ ÎNCEPEM</a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+          </nav>
+        <div class="header-background">
+            <h1 class="website-title">Cerere Credit</h1>
+        </div>
+    </div>
+
+    <!-- CONTAINER -->
+    <div class="bg-container">
+        <div class="container">
+            <div class="container-title">
+                <h2>Hey! Completeză datele tale de mai jos pentru cea mai bună ofertă de credit</h2>
+            </div>
+            
+
+            <form action="action.php" method="POST" id="form" name="registration" class="row g-3">
+                <div class="gdpr-section">
+                    <div class="round">
+                        <input type="checkbox" id="checkbox" name="checkbox" required/>
+                        <label for="checkbox"></label>
+                    </div>    
+                    <p>Am citit și sunt de acord cu Politica de GDPR </p>
+                </div>
+                <div class="col-md-6 left-side">
+                  <input type="text" class="form-control left-input" name="name" id="name" placeholder="Nume Prenume"required>
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select" id="Studii" name="studii" required>
+                        <option selected disabled value="">Studii</option>
+                        <option>Medii</option>
+                        <option>Superioare</option>
+                    </select>
+                </div>
+                <div class="col-md-6 left-side">
+                    <input type="text" class="form-control left-input" name="cnp" id="cnp" placeholder="CNP"required> 
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="domiciliu" id="domiciliu" placeholder="Adresă domiciliu" required>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+
+                     <div class="row">
+                        <div class="little-checkbox-section col-md-6">
+                            <div class="round-little">
+                                <input type="checkbox" name="littleCheck" id="checkbox-little" />
+                                <label for="checkbox-little"></label>
+                            </div>
+                        </div>
+
+                        <div class="little-checkbox-paragraph col-md-6">
+                            <p class="little-checkbox-label">Adresa de domiciliu este diferită de adresa de corespondență</p>
+                        </div>
+                     
+                     </div>     
+                            
+                        <div class="corespondenta-input">
+                            <input type="text" class="form-control" id="corespondenta" name="corespondenta" placeholder="Adresa corespondență">
+                        </div>
+                    
+                    
+                </div>
+
+                <div class="orange-line"></div>
+
+                <div class="col-md-6">
+                    <div class="row g-3">
+                        <div class="col-md-12 left-side-salariu">
+                            <select class="form-select left-input" id="salariu" name="salariu" required>
+                                <option value="0"disabled selected>Tip venit</option>
+                                <option value="1">Salariu</option>
+                                <option value="2">Pensie</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 left-side-salariu">
+                            <input type="text" class="form-control left-input salariu-data" id="angajator" name="angajator" placeholder="Nume Angajator" >
+                        </div>
+                        <div class="col-md-12 left-side-salariu">
+                            <input type="text" class="form-control left-input salariu-data" id="functie" name="functie" placeholder="Funcție" >
+                        </div>
+                        <div class="col-md-12 left-side-salariu">
+                            <input type="text" class="form-control left-input salariu-data" id="data-angajarii" name="dataAngajarii" placeholder="Data Angajării" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"  >
+                        </div>
+                        <div class="col-md-12 left-side-salariu">
+                            <input type="text" class="form-control left-input salariu-data" id="sal-lunar" name="salLunar" placeholder="Salariu lunar net" >
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row g-3">
+                        <div class="col-md-12 right-side-pensie">
+                            <select class="form-select right-side-pensie" id="pensie" name="pensie" required>
+                                <option value=""disabled selected>Tip venit</option>
+                                <option value="1">Salariu</option>
+                                <option value="2">Pensie</option>
+                            </select>
+                        </div>
+    
+                        <div class="col-md-12 right-side-pensie">
+                            <input type="text" class="form-control pensie-data" id="validation-casa-pensie" name="casaPensie" placeholder="Casa de pensii" >
+                        </div>
+                        <div class="col-md-12 right-side-pensie">
+                            <input type="text" class="form-control pensie-data" name="dataPensionare" placeholder="Data Pensionarii" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"  >
+                        </div>
+                        <div class="col-md-12 right-side-pensie">
+                            <input type="text" class="form-control pensie-data" id="pensie" name="pensieLunara" placeholder="Pensie lunară" >
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+                <div class="button-container">
+                    <button type="submit" name="submit" class="purple-button">
+                        Trimite
+                        <span><i class="fa fa-arrow-right"></i></span>
+                    </button>
+                </div>
+                
+              </form>
+
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="about-container">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Despre noi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Parteneri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-logo">
+            <div class="logo">
+                <div class="white-elipse1"></div>
+                <div class="white-elipse2"></div>
+                <div class="white-elipse3"></div>
+                <div class="point">.</div>
+            </div>
+            <div class="logo-title">
+                <a class="navbar-brand navbar-brand-footer" href="#">heyhome.</a>
+            </div>
+        </div>
+        <div class="termeni-container">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Termeni si conditii</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icon" href="#">
+                        <img src="./images/twitter.png" alt="twitter-icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icon" href="#">
+                        <img src="./images/pinterest.png" alt="pinterest-icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icon" href="#">
+                        <img src="./images/facebook.png" alt="facebook-icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icon" href="#">
+                        <img src="./images/instagram.png" alt="instagram-icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icon" href="#">
+                        <img src="./images/flickr.png" alt="flickr-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    
+    
+<script src="app.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+</body>
+</html>
+
+
+
+
